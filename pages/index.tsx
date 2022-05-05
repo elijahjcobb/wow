@@ -25,6 +25,7 @@ const Home: NextPage = () => {
           color: white;
           display: flex;
           flex-direction: column;
+          align-items: center;
         }
         .info {
           display: flex;
@@ -33,6 +34,7 @@ const Home: NextPage = () => {
           margin-top: 16px;
           overflow-y: auto;
           padding-bottom: 64px;
+          max-width: 480px;
         }
 
         .info, .line {
@@ -65,6 +67,20 @@ const Home: NextPage = () => {
           width: 100%;
           height: 40vh;
           min-height: 100px;
+        }
+        @media (min-width: 720px) {
+          .background {
+            flex-direction: row;
+          }
+          video {
+            height: 60%;
+            flex-grow: 1;
+            width: 1px;
+            display: block;
+          }
+          .info {
+            min-width: 140px;
+          }
         }
       `}</style>
       <Head>

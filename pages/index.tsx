@@ -87,7 +87,7 @@ const Home: NextPage = () => {
         <title>WOW!</title>
       </Head>
       <div className='background'>
-        <video src={url} controls autoPlay />
+        <video src={url} controls autoPlay playsInline />
         <ul className='info'>
           <LabelItem icon={FaFileVideo} title='Movie' value={wow.movie} />
           <LabelItem icon={FaCalendar} title='Year' value={`${wow.year}`} />
